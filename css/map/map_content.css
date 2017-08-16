@@ -1,0 +1,105 @@
+html {
+  font-size: 100px; }
+
+body {
+  background: url(../../img/bg.png); }
+
+.web {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .web .music {
+    position: absolute;
+    z-index: 10;
+    top: 0.2rem;
+    right: 0.3rem;
+    color: #BF0C21;
+    font-size: 0;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background: #E7C598;
+    text-align: center; }
+    .web .music > span {
+      vertical-align: middle;
+      display: inline-block; }
+      .web .music > span > i {
+        font-size: 0.15rem;
+        box-sizing: border-box; }
+  .web .aminate {
+    animation: music 3s linear infinite; }
+@keyframes music {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
+  .web #container {
+    position: absolute;
+    top: 2.12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4.45rem;
+    width: 4.73rem; }
+  .web #tip {
+    z-index: 10; }
+  .web div.ditu_text {
+    position: absolute;
+    top: 6.95rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.7rem;
+    text-align: center; }
+    .web div.ditu_text > p {
+      font-size: 0.29rem;
+      line-height: 0.41rem;
+      color: #e7c598;
+      font-weight: 600; }
+  .web .shouye {
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.56rem;
+    font-size: 0;
+    width: 5.28rem;
+    text-align: right; }
+    .web .shouye > a {
+      display: inline-block;
+      height: 0.41rem;
+      width: 0.41rem;
+      background: #e7c598;
+      border-radius: 0.21rem;
+      text-align: center; }
+      .web .shouye > a span.icon-shouye2 {
+        display: inline-block;
+        font-size: 0.28rem;
+        color: #bf0c21;
+        margin-top: 50%;
+        transform: translateY(-50%); }
+  .web .info-title {
+    color: white;
+    font-size: 14px;
+    background-color: blue;
+    line-height: 26px;
+    padding: 0px 0 0 6px;
+    font-weight: lighter;
+    letter-spacing: 1px; }
+  .web .info-content {
+    padding: 4px;
+    color: #666666;
+    line-height: 23px;
+    background: url(../../img/index/logo.png) no-repeat 50% 50%; }
+  .web .info-content img {
+    float: left;
+    margin: 3px;
+    width: 0.5rem;
+    height: 0.6rem; }
+  .web .shop_name {
+    font-size: 0.16rem;
+    line-height: 0.26rem;
+    letter-spacing: 0.01rem; }
+  .web .address {
+    font-size: 0.16rem;
+    line-height: 0.26rem;
+    letter-spacing: 0.01rem; }
+
+/*# sourceMappingURL=map_content.css.map */

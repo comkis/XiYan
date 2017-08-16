@@ -1,0 +1,140 @@
+@charset 'utf-8';
+$f:100px;
+html {
+    font-size: $f;
+}
+
+@function fs($px) {
+    @return ($px/$f*1rem);
+}
+
+body {
+    background: url(../../img/bg.png);
+}
+
+.web {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+      .music {
+        position: absolute;
+        z-index: 10;
+        top: fs(20px);
+        right: fs(30px);
+        color: #BF0C21;
+        font-size: 0;
+        width: fs(20px);
+        height: fs(20px);
+        border-radius: 50%;
+        background: #E7C598;
+        text-align: center;
+       
+        &>span {
+             vertical-align: middle;
+            display: inline-block;
+            &>i {
+                font-size: fs(15px);
+                box-sizing: border-box;
+            }
+        }
+    }
+    .aminate {
+        animation: music 3s linear infinite;
+        @keyframes music {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+    }
+    #container {
+        position: absolute;
+        top: fs(212px);
+        left: 50%;
+        transform: translateX(-50%);
+        height: fs(445px);
+        width: fs(473px);
+    }
+    #tip{
+        z-index: 10;
+    }
+    div.ditu_text {
+        position: absolute;
+        top: fs(695px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: fs(470px);
+        text-align: center;
+        &>p {
+            font-size: fs(29px);
+            line-height: fs(41px);
+            color: #e7c598;
+            font-weight: 600;
+        }
+    }
+    .shouye {
+        position: absolute;
+        bottom:fs(25px);
+        right: fs(56px);
+        font-size: 0;
+        width: fs(528px);
+        text-align: right;
+        &>a {
+            display: inline-block;
+            height: fs(41px);
+            width: fs(41px);
+            background: #e7c598;
+            border-radius: fs(21px);
+            text-align: center;
+            span.icon-shouye2 {
+                display: inline-block;
+                font-size: fs(28px);
+                color: #bf0c21;
+                margin-top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    
+    
+    
+    
+    .info-title {
+                color: white;
+                font-size: 14px;
+                background-color: blue;
+                line-height: 26px;
+                padding: 0px 0 0 6px;
+                font-weight: lighter;
+                letter-spacing: 1px
+            }
+            
+            .info-content {
+               
+                padding: 4px;
+                color: #666666;
+                line-height: 23px;
+                background: url(../../img/index/logo.png) no-repeat 50%  50%;
+            }
+            
+            .info-content img {
+                float: left;
+                margin: 3px;
+                width:fs(50px);
+                height: fs(60px);
+            }
+            .shop_name{
+                font-size: fs(16px);
+                line-height: fs(26px);
+                letter-spacing: fs(1px);
+//              color: #;
+            }
+            .address{
+                font-size: fs(16px);
+                line-height: fs(26px);
+                letter-spacing: fs(1px);
+            }
+}

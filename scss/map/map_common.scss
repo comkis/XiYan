@@ -1,0 +1,199 @@
+@charset 'utf-8';
+$f:100px;
+html {
+    font-size: $f;
+}
+
+@function fs($px) {
+    @return ($px/$f*1rem);
+}
+
+body {
+    background: url(../../img/bg.png);
+}
+
+.web {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .music {
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        top: fs(20px);
+        right: fs(30px);
+        color: #BF0C21;
+        font-size: 0;
+        width: fs(20px);
+        height: fs(20px);
+        border-radius: 50%;
+        background: #E7C598;
+        text-align: center;
+        &>span {
+             vertical-align: middle;
+            display: inline-block;
+            &>i {
+                font-size: fs(15px);
+                box-sizing: border-box;
+            }
+        }
+    }
+    .aminate {
+        animation: music 3s linear infinite;
+        @keyframes music {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+    }
+    .head {
+        font-size: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .btn {
+            margin: fs(36px) 0 0 fs(43px);
+            width: fs(90px);
+            height: fs(38px);
+            line-height: fs(38px);
+            background: #e7c598;
+            border-radius: fs(8px);
+            text-align: center;
+            &>img {
+                width: 80%;
+                vertical-align: middle;
+            }
+        }
+        .map {
+            &>img {
+                width: 100%;
+            }
+        }
+        .zuobiao {
+            position: absolute;
+            width: fs(67px);
+            height: fs(88px);
+            text-align: center;
+            &>img {
+                width: 100%;
+            }
+        }
+        .zuobiao_text {
+            display: inline-block;
+            font-size: fs(12px);
+            transform: translateY(fs(-75px));
+            color: #bf0c21;
+            &>em {
+                font-size: fs(18px);
+            }
+        }
+    }
+    .lipin {
+        position: absolute;
+        top: fs(412px);
+        right: fs(27px);
+        p {
+            text-align: right;
+            color: #e7c598;
+        }
+        .shengyu_num {
+            font-size: fs(30px);
+            line-height: fs(40px);
+            &>em {
+                font-size: fs(40px);
+                line-height: fs(50px);
+            }
+        }
+        .huenyan {
+            font-size: fs(38px);
+            margin-top: fs(4px);
+        }
+        .dailing {
+            font-size: fs(28px);
+        }
+    }
+    .fangshi {
+        position: absolute;
+        top: fs(554px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: fs(531px);
+        height: fs(280px);
+        overflow-y: scroll;
+        p {
+            color: #e7c598;
+            text-align: justify;
+        }
+        .lingqufangshi {
+            font-size: fs(26px);
+            line-height: fs(36px);
+            margin: fs(5px) 0;
+            font-weight: 600;
+        }
+        .fangshi_content {
+            font-size: fs(18px);
+            line-height: fs(32px);
+        }
+        .shijian {
+            font-size: fs(26px);
+            line-height: fs(36px);
+            margin: fs(10px) 0;
+            font-weight: 600;
+        }
+        .shijian_content {
+            font-size: fs(18px);
+            line-height: fs(32px);
+        }
+        .tiaojian {
+            font-size: fs(26px);
+            line-height: fs(36px);
+            margin: fs(7px) 0;
+            font-weight: 600;
+        }
+        .tiaojian_content {
+            font-size: fs(18px);
+            line-height: fs(32px);
+        }
+    }
+    .foot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: fs(136px);
+        width: 100%;
+        font-size: 0;
+        text-align: center;
+        .lingqudian_btn {
+            display: inline-block;
+            margin-top: fs(27px);
+            width: fs(318px);
+            img {
+                width: 100%;
+            }
+        }
+        .shouye {
+            margin: fs(-4px) auto 0 auto;
+            width: fs(528px);
+            text-align: right;
+            &>a {
+                display: inline-block;
+                height: fs(41px);
+                width: fs(41px);
+                background: #e7c598;
+                border-radius: fs(21px);
+                text-align: center;
+                span.icon-shouye2 {
+                    display: inline-block;
+                    font-size: fs(28px);
+                    color: #bf0c21;
+                    margin-top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

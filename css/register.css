@@ -1,0 +1,153 @@
+html {
+  font-size: 20px; }
+
+body {
+  background: url(../img/bg.png); }
+  body .web {
+    width: 85.9375%;
+    margin: 0 auto; }
+    body .web .information {
+      text-align: center;
+      color: #e7c598;
+      padding-top: 7.46627rem; }
+      body .web .information h2 {
+        font-size: fon(45px);
+        margin-bottom: 0.84524rem; }
+      body .web .information .in_model {
+        border-radius: 5px;
+        margin-top: 0.42262rem;
+        height: 38px;
+        width: 100%;
+        background: #e7c598;
+        color: #bf0c21;
+        text-align: left; }
+        body .web .information .in_model > p {
+          font-size: 0.84524rem;
+          display: inline-block;
+          margin: 0;
+          padding-left: 5px;
+          width: 45%;
+          line-height: 38px;
+          border-right: solid 1px #BF0C21; }
+        body .web .information .in_model input {
+          font-size: 0.84524rem;
+          height: 38px;
+          border: 0;
+          width: 48%;
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          background: #e7c598; }
+      body .web .information > p {
+        font-size: 0.67619rem;
+        line-height: 0.84524rem; }
+      body .web .information > p:first-of-type {
+        margin-top: 0.84524rem; }
+      body .web .information input[name="submit"] {
+        margin-top: 0.98611rem;
+        width: 45.45455%;
+        height: 1.26786rem;
+        background: url(../img/index/btn_04.png);
+        background-size: 100%; }
+    body .web input[type="checkbox"] {
+      display: none; }
+    body .web input[id="succee"]:checked ~ .succeed {
+      display: block; }
+    body .web input[id="err2"]:checked ~ .error {
+      display: block; }
+    body .web .succeed {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5); }
+      body .web .succeed > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translatex(-50%);
+        width: 64.6875%;
+        height: 7.1rem;
+        background: #E7C598;
+        font-size: 1.69048rem;
+        text-align: center;
+        border-radius: 10px;
+        color: #bf0c21; }
+        body .web .succeed > div i {
+          position: absolute;
+          top: 4%;
+          right: 3.62319%;
+          width: 20px;
+          height: 20px;
+          font-size: 20px;
+          line-height: 20px;
+          border-radius: 50%;
+          color: #e7c598;
+          background-color: #bf0c21; }
+        body .web .succeed > div > p {
+          padding-top: 16%; }
+        body .web .succeed > div a {
+          font-size: 0.56349rem;
+          border-radius: 3px;
+          margin-top: 4%;
+          padding: 2%;
+          width: 48.30918%;
+          color: #e7c598;
+          background-color: #bf0c21; }
+    body .web .error {
+      display: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5); }
+      body .web .error > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translatex(-50%);
+        width: 64.6875%;
+        height: 7.1rem;
+        background: #E7C598;
+        font-size: 1.12698rem;
+        text-align: center;
+        color: #bf0c21;
+        border-radius: 10px; }
+        body .web .error > div i {
+          position: absolute;
+          top: 4%;
+          right: 3.62319%;
+          width: 20px;
+          height: 20px;
+          font-size: 20px;
+          line-height: 20px;
+          border-radius: 50%;
+          color: #e7c598;
+          background-color: #bf0c21; }
+        body .web .error > div > p {
+          padding-top: 12%; }
+        body .web .error > div label input {
+          border-radius: 3px;
+          margin-top: 8%;
+          padding: 2%;
+          width: 48.30918%;
+          color: #e7c598;
+          background-color: #bf0c21; }
+    body .web .home {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #E7C598;
+      color: #BF0C21;
+      line-height: 25px;
+      text-align: center;
+      position: fixed;
+      right: 30px;
+      bottom: 15px; }
+      body .web .home a {
+        color: #BF0C21; }
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,85 @@
+@charset "utf-8";
+$font-size: 20px;
+@function wid($px) {
+     @return ($px/640px)*100%;
+}
+@function fun($px) {
+     @return $px/$font-size*(640/640)*1rem;
+}
+
+
+html {
+    font-size: 20px;
+}
+body{
+    background:url(../img/bg.png);
+    .web{
+        margin: 0 auto;
+        width:wid(530px);
+        color: #e7c598;
+        padding-top: fun(10px);
+        p{
+            line-height: fun(16px);
+            font-size: fun(10px);
+            font-weight: normal;
+        }
+        .tital{
+            line-height: fun(24px);
+            font-size: fun(18px);
+            font-weight: bold;
+        }
+        .btn{
+            display:block;
+            width: wid(400px);
+            margin: fun(10px) auto 0;
+            img{
+                width: 100%;
+            }
+        }
+        .home{
+            width: 25px;
+            height: 25px;
+            border-radius: 50% ;
+            background-color: #E7C598;
+            color: #BF0C21;
+            line-height:25px;
+            text-align: center;
+            position: fixed;
+            right: 30px;
+            bottom:15px;
+            a{
+                color: #BF0C21;
+            }
+        }
+    }
+    @media only screen and (min-height:600px) and (max-height:700px){
+        .web{
+            p{
+                line-height: fun(18px);
+                font-size: fun(14px);
+            }
+            .tital{
+                line-height: fun(30px);
+                font-size: fun(20px);
+            }
+            .btn{
+                margin: fun(20px) auto 0;
+            }
+        }
+    }
+    @media only screen and (min-height:701px){
+        .web{
+            p{
+                line-height: fun(20px);
+                font-size: fun(16px);
+            }
+            .tital{
+                line-height: fun(30px);
+                font-size: fun(22px);
+            }
+            .btn{
+                margin: fun(20px) auto 0;
+            }
+        }
+    }
+}

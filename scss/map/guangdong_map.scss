@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+$f:100px;
+
+html{
+    font-size: $f;
+}
+
+@function fs($px){
+    @return ($px/$f*1rem) ;
+}
+
+.web{
+   
+    
+    .shaoguan{
+        right:fs(250px);
+        top: fs(28px);
+    }
+     .miaoming{
+        left: fs(109px);
+        top: fs(256px);
+    }
+    .yangjiang{
+        left: fs(192px);
+        top: fs(243px);
+    }
+    .guangdong_map{
+        width: fs(535px);
+         margin: 0 auto;
+    }
+    
+}
+
+

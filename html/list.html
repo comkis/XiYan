@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>排行榜</title>
+		<link rel="stylesheet" href="../css/reset.css"></link>
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" href="../css/list.css" charset="utf-8">
+
+	</head>
+
+	<body>
+
+		<div class="web">
+			
+			<div class="music " >
+				<audio  class="audio" autoplay  loop onended="this.play()">
+					 <source src="../img/bgm.mp3" type="audio/mp3"/>
+				</audio>
+				<span class="aminate">
+					<i class="iconfont icon-yinle " ></i>
+				</span>
+				
+			</div>
+			<!--音乐结束-->
+			<div class="head">
+
+				<div class="picture">
+					<img src="../img/index/tatil.png" alt="">
+				</div>
+			</div>
+			<div id=""class="main">
+				
+			
+			<div class="main_content">
+				
+			</div>
+			</div>
+			<div class="foot">
+				
+			
+			<div class="home">
+				<a href="index.html">
+					<span class="iconfont icon-shouye2"></span>
+				</a>
+			</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			/*动态改变根元素字体大小*/
+			function recalc() {
+				var clientWidth = document.documentElement.clientWidth; //等于html的宽
+				if(!clientWidth) return; //不支持clientWidth指令时退出
+				document.documentElement.style.fontSize = 100 * (clientWidth / 640) + 'px'; //(clientWidth / 640)用html的宽除以设计图的宽度
+			}
+
+			function initRecalc() {
+				recalc();
+				var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+				if(!document.addEventListener) return; //不支持监听事件直接退出
+				window.addEventListener(resizeEvt, recalc, false);
+				document.addEventListener('DOMContentLoaded', recalc, false);
+			}
+			initRecalc();
+		</script>
+		<script src="../js/jq.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/list.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

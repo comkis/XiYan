@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>兑换</title>
+		<link rel="stylesheet" href="../css/reset.css"></link>
+		<link rel="stylesheet" href="../css/iconfont.css" >
+		<link rel="stylesheet" href="../css/key.css" charset="utf-8">
+		<link rel="stylesheet" href="../css/music.css">
+	</head>
+	<body>
+		<div class="web">
+
+			<div class="music aminate" >
+				<audio  class="audio" autoplay  loop onended="this.play()">
+					<source src="../img/bgm.mp3" type="audio/mp3"/>
+				</audio>
+				<i class="iconfont icon-yinle" ></i>
+			</div>
+    		<div class="form1">
+                <p>请输入兑换码</p>
+                <input type="text" class="number" name="munber">
+                <input type="button" class="submit" name="submit" value="">
+            </div>
+			<input type="checkbox" id="succe" value="" />
+			<input type="checkbox" id="err" value="" />
+			<div class="succeed">
+				<div>
+					<label for="succe">
+						<i class="iconfont icon-guanbi01"></i>
+					</label>
+					<p>兑换成功</p>
+				</div>
+			</div>
+			<div class="error">
+				<div>
+					<label for="err">
+						<i class="iconfont icon-guanbi01"></i>
+					</label>
+					<p>兑换失败</p>
+					<label for="err">
+						<input type="button" class="reset" name="reset" value="重新输入">
+					</label>
+				</div>
+			</div>
+            <div class="home">
+                <a href="index.html">
+                    <i class="iconfont icon-shouye2"></i>
+                </a>
+            </div>
+
+        </div>
+		<script src="../js/index.js" charset="utf-8"></script>
+		<script src="../js/music.js" charset="UTF-8"></script>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+@charset "utf-8";
+$font-size: 20px;
+@function wid($px) {
+     @return ($px/640px)*100%;
+}
+@function fun($px) {
+     @return $px/$font-size*(568/1008)*1rem;
+}
+
+
+html {
+    font-size: 20px;
+}
+body{
+    background:url(../img/bg.png);
+    .web{
+        width: wid(550px);
+        margin: 0 auto;
+        .information{
+            text-align: center;
+            color:#e7c598;
+            padding-top: fun(265px);
+            h2{
+                font-size: fon(45px);
+                margin-bottom: fun(30px);
+            }
+            .in_model{
+                border-radius:5px;
+                margin-top:fun(15px);
+                height:38px;
+                width:100%;
+                background: #e7c598;
+                color: #bf0c21;
+                text-align:left;
+                >p{
+                    font-size: fun(30px);
+                    display: inline-block;
+                    margin:0;
+                    padding-left:5px;
+                    width:45%;
+                    line-height:38px;
+                    border-right: solid 1px #BF0C21;
+                }
+                input{
+                    font-size:fun(30px);
+                    height:38px;
+                    border:0;
+                    width:48%;
+                    margin:0;
+                    padding:0;
+                    display: inline-block;
+                    background: #e7c598;
+                }
+            }
+            >p{
+                font-size:fun(24px);
+                line-height: fun(30px);
+            }
+            >p:first-of-type{
+                margin-top: fun(30px);
+            }
+
+            input[name="submit"]{
+                margin-top: fun(35px);
+                width:(250px/550px)*100%;
+                height:fun(45px);
+                background:url(../img/index/btn_04.png);
+                background-size: 100%;
+
+            }
+        }
+        input[type="checkbox"]{
+        	display: none;
+        }
+        input[id="succee"]:checked~.succeed{
+        	display: block;
+        }
+        input[id="err2"]:checked~.error{
+        	display: block;
+        }
+        .succeed{
+            display:none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0,0,0,.5);
+            >div{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translateY(-50%) translatex(-50%);
+                width:wid(414px);
+                height:fun(252px);
+                background: #E7C598;
+                font-size:fun(60px);
+                text-align:center;
+                border-radius: 10px;
+                color:#bf0c21;
+                i{
+                    position: absolute;
+                    top: (10px/250px)*100%;
+                    right:(15px/414px)*100%;
+                    width:20px;
+                    height:20px;
+                    font-size:20px;
+                    line-height:20px;
+                    border-radius: 50%;
+                    color:#e7c598;
+                    background-color: #bf0c21;
+                }
+                >p{
+                    padding-top:(40px/250px)*100%;
+                }
+                a{
+                	font-size: fun(20px);
+                	border-radius:3px;
+                    margin-top:(10px/250px)*100%;
+                    padding:(5px/250px)*100%;
+                    width:(200px/414px)*100%;
+                    color:#e7c598;
+                    background-color: #bf0c21;
+                }
+            }
+
+
+        }
+
+        .error{
+            display:none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0,0,0,.5);
+            >div{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translateY(-50%) translatex(-50%);
+                width:wid(414px);
+                height:fun(252px);
+                background: #E7C598;
+                font-size:fun(40px);
+                text-align:center;
+                color:#bf0c21;
+                border-radius: 10px;
+                i{
+                    position: absolute;
+                    top: (10px/250px)*100%;
+                    right:(15px/414px)*100%;
+                    width:20px;
+                    height:20px;
+                    font-size:20px;
+                    line-height:20px;
+                    border-radius: 50%;
+                    color:#e7c598;
+                    background-color: #bf0c21;
+                }
+                >p{
+                    padding-top:(30px/250px)*100%;
+                }
+                label{
+                	input{
+	                    border-radius:3px;
+	                    margin-top:(20px/250px)*100%;
+	                    padding:(5px/250px)*100%;
+	                    width:(200px/414px)*100%;
+	                    color:#e7c598;
+	                    background-color: #bf0c21;
+	                }
+                }
+                
+            }
+
+        }
+        
+        .home{
+            width: 25px;
+            height: 25px;
+            border-radius: 50% ;
+            background-color: #E7C598;
+            color: #BF0C21;
+            line-height:25px;
+            text-align: center;
+            position: fixed;
+            right: 30px;
+            bottom:15px;
+            a{
+                color: #BF0C21;
+            }
+        }
+    }
+}

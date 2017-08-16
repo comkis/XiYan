@@ -1,0 +1,164 @@
+@charset "utf-8";
+$f:100px;
+html {
+    font-size: $f;
+}
+
+@function fs($px) {
+    @return ($px/$f*1rem);
+}
+
+body {
+    background: url(../img/bg.png);
+    .web {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        color: #e7c598;
+        position: relative;
+        .music {
+        position: absolute;
+        z-index: 10;
+        top: fs(20px);
+        right: fs(30px);
+        color: #BF0C21;
+        font-size: 0;
+        width: fs(20px);
+        height: fs(20px);
+        border-radius: 50%;
+        background: #E7C598;
+        text-align: center;
+        &>span {
+             vertical-align: middle;
+            display: inline-block;
+            &>i {
+                font-size: fs(15px);
+                box-sizing: border-box;
+            }
+        }
+    }
+    .aminate {
+        animation: music 3s linear infinite;
+        @keyframes music {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+    }
+        .head {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: fs(85px);
+            .picture {
+                width: fs(318px);
+                height: fs(44px);
+                margin: 0 auto;
+                padding-top: fs(41px);
+                font-size: 0;
+                overflow: hidden;
+                &>img {
+                    width: 100%;
+                }
+            }
+        }
+        .main {
+            position: absolute;
+            top: fs(85px);
+            left: 0;
+            width: 100%;
+            height: 72.08%;
+            overflow-y: scroll;
+        }
+            .list_model {
+                margin: 0 auto;
+                height: fs(90px);
+                width: fs(500px);
+                border: fs(2px) solid #E7C598;
+                font-size: 0;
+                vertical-align: middle;
+                .xuhao {
+//                  margin: fs(26px) 0 0 fs(39px);
+                    margin-top: fs(26px);
+                    width: fs(96px);
+                    text-align: center;
+                    .ic {
+                        width: 100%;
+                        text-align: center;
+                        img {
+                            display: inline-block;
+                            width: 20%;
+                        }
+                    }
+                    .num {
+                        font-size: fs(25px);
+                    }
+                }
+                .touxiang {
+                    height: fs(62px);
+                    width: fs(62px);
+                    border-radius: 50%;
+                    overflow: hidden;
+                    text-align: center;
+//                  margin: fs(15px) 0 0 fs(40px);
+                    margin-top:fs(15px) ;
+                    &>img {
+                        vertical-align: middle;
+                        width: 100%;
+                    }
+                }
+                .name {
+                    margin: fs(35px) 0 0 fs(25px);
+                    line-height: fs(30px);
+                    font-size: fs(20px);
+                }
+                .renshu {
+                    font-size: fs(19px);
+                    line-height: fs(29px);
+                    margin: fs(34px) fs(22px) 0 0;
+                }
+            
+        }
+        .foot {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: fs(90px);
+            .home {
+                text-align: right;
+                font-size: 0;
+                overflow: hidden;
+                a {
+                    display: inline-block;
+                    margin: fs(24px) fs(56px) 0 0;
+                    width: fs(41px);
+                    height: fs(41px);
+                    border-radius: 50%;
+                    background-color: #E7C598;
+                    color: #BF0C21;
+                    text-align: center;
+                    line-height: fs(41px);
+                    &>span {
+                        font-size: fs(28px);
+                        color: #BF0C21;
+                       
+                    }
+                }
+            }
+        }
+         .weizhi{
+//              display: none;
+                position: absolute;
+//              top: fs(931px);
+                top: 80.5%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #888;
+            }
+    }
+}

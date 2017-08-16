@@ -1,0 +1,49 @@
+@charset "utf-8";
+$font-size : 20px;
+
+html{
+    font-size: $font-size;
+}
+
+@function fun($px){
+    @return $px/$font-size*(640/640)*1rem;
+}
+.web{
+	.music{
+		z-index: 99;
+		position: absolute;
+		top: fun(20px);
+		right: fun(30px);
+		color: #BF0C21;
+		>i{
+			width: fun(20px);
+			height: fun(20px);
+			padding: fun(5px);
+			font-size: fun(15px);
+			background: #E7C598;
+			border-radius: 50%;
+			box-sizing: border-box;
+		}
+			
+	}
+	.amin{
+		animation:music 3s linear infinite;
+		@keyframes music {
+				from  { 
+				 	transform: rotateZ(0deg);
+				 	} 
+				to  { 
+				 	transform: rotateZ(360deg);
+				 	} 
+			}
+	}
+}
+
+
+//html代码
+//<div class="music aminate" >
+//	<audio  class="audio" autoplay  loop onended="this.play()">
+//		 <source src="../img/bgm.mp3" type="audio/mp3"/>
+//	</audio>
+//	<i class="iconfont icon-yinle" ></i>
+//</div>

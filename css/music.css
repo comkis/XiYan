@@ -1,0 +1,26 @@
+html {
+  font-size: 20px; }
+
+.web .music {
+  z-index: 99;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: #BF0C21; }
+  .web .music > i {
+    width: 1rem;
+    height: 1rem;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+    background: #E7C598;
+    border-radius: 50%;
+    box-sizing: border-box; }
+.web .amin {
+  animation: music 3s linear infinite; }
+@keyframes music {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
+
+/*# sourceMappingURL=music.css.map */

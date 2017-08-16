@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>活动规则</title>
+		<link rel="stylesheet" href="../css/reset.css"></link>
+		<link rel="stylesheet" href="../css/iconfont.css" >
+		<link rel="stylesheet" href="../css/register.css" charset="utf-8">
+		<link rel="stylesheet" href="../css/music.css">
+	</head>
+	<body>
+		<div class="web">
+			<div class="music aminate" >
+				<audio  class="audio" autoplay  loop onended="this.play()">
+					 <source src="../img/bgm.mp3" type="audio/mp3"/>
+				</audio>
+				<i class="iconfont icon-yinle" ></i>
+			</div>
+
+			<div class="information">
+				<h2>填写囍宴主人的信息</h2>
+				<div class="in_model">
+					<p>真实姓名</p>
+					<input type="text" class="name" name="name" value="">
+				</div>
+				<div class="in_model">
+					<p>联系电话</p>
+					<input type="text" class="telePhone" name="telePhone" value="">
+				</div>
+				<div class="in_model">
+					<p>囍宴举办地点</p>
+					<input type="text" class="address" name="address" value="">
+				</div>
+				<div class="in_model">
+					<p>囍宴举办日期</p>
+					<input type="text" class="day" name="day" value="">
+				</div>
+				<p>只有于2016年1月1日后进行婚姻登记</p>
+				<p>并在2016年10月1日——10月7日举办婚宴的新人</p>
+				<p>（限广东省、海南省区域）才能入榜噢！</p>
+
+				<input type="button" class="submit" name="submit" value="">
+			</div>
+			<input type="checkbox" name="succee" id="succee" value=""/>
+			<input type="checkbox" name="err2" id="err2" value=""/>
+			<div class="succeed">
+				<div>
+					<label for="succee">
+						<i class="iconfont icon-guanbi01"></i>
+					</label>
+					<p>提交成功</p>
+					<a href="list.html">查看我的排名</a>
+				</div>
+			</div>
+			<div class="error">
+				<div>
+					<label for="err2">
+						<i class="iconfont icon-guanbi01"></i>
+					</label>
+					<p>信息有误，请输入正确的信息</p>
+					<label for="err2">
+						<input type="button" class="reset2" name="reset" value="返回">
+					</label>
+				</div>
+			</div>
+			<div class="home">
+				<a href="index.html">
+					<i class="iconfont icon-shouye2"></i>
+				</a>
+			</div>
+        </div>
+        <script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/music.js" type="text/javascript"></script>
+    </body>
+</html>

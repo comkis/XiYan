@@ -1,0 +1,126 @@
+html {
+  font-size: 100px; }
+
+body {
+  background: url(../img/bg.png); }
+  body .web {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: #e7c598;
+    position: relative; }
+    body .web .music {
+      position: absolute;
+      z-index: 10;
+      top: 0.2rem;
+      right: 0.3rem;
+      color: #BF0C21;
+      font-size: 0;
+      width: 0.2rem;
+      height: 0.2rem;
+      border-radius: 50%;
+      background: #E7C598;
+      text-align: center; }
+      body .web .music > span {
+        vertical-align: middle;
+        display: inline-block; }
+        body .web .music > span > i {
+          font-size: 0.15rem;
+          box-sizing: border-box; }
+    body .web .aminate {
+      animation: music 3s linear infinite; }
+@keyframes music {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
+    body .web .head {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0.85rem; }
+      body .web .head .picture {
+        width: 3.18rem;
+        height: 0.44rem;
+        margin: 0 auto;
+        padding-top: 0.41rem;
+        font-size: 0;
+        overflow: hidden; }
+        body .web .head .picture > img {
+          width: 100%; }
+    body .web .main {
+      position: absolute;
+      top: 0.85rem;
+      left: 0;
+      width: 100%;
+      height: 72.08%;
+      overflow-y: scroll; }
+    body .web .list_model {
+      margin: 0 auto;
+      height: 0.9rem;
+      width: 5rem;
+      border: 0.02rem solid #E7C598;
+      font-size: 0;
+      vertical-align: middle; }
+      body .web .list_model .xuhao {
+        margin-top: 0.26rem;
+        width: 0.96rem;
+        text-align: center; }
+        body .web .list_model .xuhao .ic {
+          width: 100%;
+          text-align: center; }
+          body .web .list_model .xuhao .ic img {
+            display: inline-block;
+            width: 20%; }
+        body .web .list_model .xuhao .num {
+          font-size: 0.25rem; }
+      body .web .list_model .touxiang {
+        height: 0.62rem;
+        width: 0.62rem;
+        border-radius: 50%;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 0.15rem; }
+        body .web .list_model .touxiang > img {
+          vertical-align: middle;
+          width: 100%; }
+      body .web .list_model .name {
+        margin: 0.35rem 0 0 0.25rem;
+        line-height: 0.3rem;
+        font-size: 0.2rem; }
+      body .web .list_model .renshu {
+        font-size: 0.19rem;
+        line-height: 0.29rem;
+        margin: 0.34rem 0.22rem 0 0; }
+    body .web .foot {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0.9rem; }
+      body .web .foot .home {
+        text-align: right;
+        font-size: 0;
+        overflow: hidden; }
+        body .web .foot .home a {
+          display: inline-block;
+          margin: 0.24rem 0.56rem 0 0;
+          width: 0.41rem;
+          height: 0.41rem;
+          border-radius: 50%;
+          background-color: #E7C598;
+          color: #BF0C21;
+          text-align: center;
+          line-height: 0.41rem; }
+          body .web .foot .home a > span {
+            font-size: 0.28rem;
+            color: #BF0C21; }
+    body .web .weizhi {
+      position: absolute;
+      top: 80.5%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #888; }
+
+/*# sourceMappingURL=list.css.map */

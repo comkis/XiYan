@@ -1,0 +1,155 @@
+html {
+  font-size: 100px; }
+
+body {
+  background: url(../../img/bg.png); }
+
+.web {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .web .music {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    top: 0.2rem;
+    right: 0.3rem;
+    color: #BF0C21;
+    font-size: 0;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background: #E7C598;
+    text-align: center; }
+    .web .music > span {
+      vertical-align: middle;
+      display: inline-block; }
+      .web .music > span > i {
+        font-size: 0.15rem;
+        box-sizing: border-box; }
+  .web .aminate {
+    animation: music 3s linear infinite; }
+@keyframes music {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
+  .web .head {
+    font-size: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .web .head .btn {
+      margin: 0.36rem 0 0 0.43rem;
+      width: 0.9rem;
+      height: 0.38rem;
+      line-height: 0.38rem;
+      background: #e7c598;
+      border-radius: 0.08rem;
+      text-align: center; }
+      .web .head .btn > img {
+        width: 80%;
+        vertical-align: middle; }
+    .web .head .map > img {
+      width: 100%; }
+    .web .head .zuobiao {
+      position: absolute;
+      width: 0.67rem;
+      height: 0.88rem;
+      text-align: center; }
+      .web .head .zuobiao > img {
+        width: 100%; }
+    .web .head .zuobiao_text {
+      display: inline-block;
+      font-size: 0.12rem;
+      transform: translateY(-0.75rem);
+      color: #bf0c21; }
+      .web .head .zuobiao_text > em {
+        font-size: 0.18rem; }
+  .web .lipin {
+    position: absolute;
+    top: 4.12rem;
+    right: 0.27rem; }
+    .web .lipin p {
+      text-align: right;
+      color: #e7c598; }
+    .web .lipin .shengyu_num {
+      font-size: 0.3rem;
+      line-height: 0.4rem; }
+      .web .lipin .shengyu_num > em {
+        font-size: 0.4rem;
+        line-height: 0.5rem; }
+    .web .lipin .huenyan {
+      font-size: 0.38rem;
+      margin-top: 0.04rem; }
+    .web .lipin .dailing {
+      font-size: 0.28rem; }
+  .web .fangshi {
+    position: absolute;
+    top: 5.54rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5.31rem;
+    height: 2.8rem;
+    overflow-y: scroll; }
+    .web .fangshi p {
+      color: #e7c598;
+      text-align: justify; }
+    .web .fangshi .lingqufangshi {
+      font-size: 0.26rem;
+      line-height: 0.36rem;
+      margin: 0.05rem 0;
+      font-weight: 600; }
+    .web .fangshi .fangshi_content {
+      font-size: 0.18rem;
+      line-height: 0.32rem; }
+    .web .fangshi .shijian {
+      font-size: 0.26rem;
+      line-height: 0.36rem;
+      margin: 0.1rem 0;
+      font-weight: 600; }
+    .web .fangshi .shijian_content {
+      font-size: 0.18rem;
+      line-height: 0.32rem; }
+    .web .fangshi .tiaojian {
+      font-size: 0.26rem;
+      line-height: 0.36rem;
+      margin: 0.07rem 0;
+      font-weight: 600; }
+    .web .fangshi .tiaojian_content {
+      font-size: 0.18rem;
+      line-height: 0.32rem; }
+  .web .foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1.36rem;
+    width: 100%;
+    font-size: 0;
+    text-align: center; }
+    .web .foot .lingqudian_btn {
+      display: inline-block;
+      margin-top: 0.27rem;
+      width: 3.18rem; }
+      .web .foot .lingqudian_btn img {
+        width: 100%; }
+    .web .foot .shouye {
+      margin: -0.04rem auto 0 auto;
+      width: 5.28rem;
+      text-align: right; }
+      .web .foot .shouye > a {
+        display: inline-block;
+        height: 0.41rem;
+        width: 0.41rem;
+        background: #e7c598;
+        border-radius: 0.21rem;
+        text-align: center; }
+        .web .foot .shouye > a span.icon-shouye2 {
+          display: inline-block;
+          font-size: 0.28rem;
+          color: #bf0c21;
+          margin-top: 50%;
+          transform: translateY(-50%); }
+
+/*# sourceMappingURL=map_common.css.map */

@@ -1,0 +1,161 @@
+@charset "utf-8";
+$font-size: 20px;
+@function wid($px) {
+     @return ($px/640px)*100%;
+}
+@function fun($px) {
+     @return $px/$font-size*(568/1008)*1rem;
+}
+
+
+html {
+    font-size: 20px;
+}
+body{
+    background:url(../img/bg.png);
+    .web{
+        width: wid(550px);
+        margin: 0 auto;
+        .form1{
+            text-align: center;
+            color:#e7c598;
+            padding-top: fun(265px);
+            >p{
+                font-size: fun(60px);
+                margin: fun(40px) auto;
+            }
+            input[type="text"]{
+                background-color: #E7C598;
+                width: wid(550px);
+                height:fun(60px);
+                border-radius: 5px;
+                padding-left: 5px;
+            }
+            input[name="submit"]{
+                margin-top: fun(60px);
+                width:(250px/550px)*100%;
+                height:fun(45px);
+                background:url(../img/index/btn_05.png);
+                background-size: 100%;
+
+            }
+
+
+        }
+        input[type="checkbox"]{
+            display:none;
+        }
+        input[id="succe"]:checked~.succeed{
+            display:block;
+        }
+        input[id="err"]:checked~.error{
+            display:block;
+        }
+        .succeed{
+            display:none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0,0,0,.5);
+            >div{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translateY(-50%);
+                transform: translateX(-50%);
+                width:wid(414px);
+                height:fun(252px);
+                background: #E7C598;
+                font-size:fun(60px);
+                text-align:center;
+                color:#bf0c21;
+                border-radius: 10px;
+                i{
+                    position: absolute;
+                    top: (10px/250px)*100%;
+                    right:(15px/414px)*100%;
+                    width:20px;
+                    height:20px;
+                    font-size:20px;
+                    line-height:20px;
+                    border-radius: 50%;
+                    color:#e7c598;
+                    background-color: #bf0c21;
+                }
+                >p{
+                    padding-top:(60px/250px)*100%;
+                }
+            }
+
+
+        }
+
+        .error{
+            display:none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0,0,0,.5);
+            >div{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translateY(-50%);
+                transform: translateX(-50%);
+                width:wid(414px);
+                height:fun(252px);
+                background: #E7C598;
+                font-size:fun(40px);
+                text-align:center;
+                color:#bf0c21;
+                border-radius: 10px;
+                i{
+                    position: absolute;
+                    top: (10px/250px)*100%;
+                    right:(15px/414px)*100%;
+                    width:20px;
+                    height:20px;
+                    font-size:20px;
+                    line-height:20px;
+                    border-radius: 50%;
+                    color:#e7c598;
+                    background-color: #bf0c21;
+                }
+                >p{
+                    padding-top:(35px/250px)*100%;
+                }
+                label{
+                	input{
+	                    border-radius:3px;
+	                    margin-top:(20px/250px)*100%;
+	                    padding:(5px/250px)*100%;
+	                    width:(200px/414px)*100%;
+	                    color:#e7c598;
+	                    background-color: #bf0c21;
+	                }
+                }
+                
+            }
+
+        }
+        .home{
+            width: 25px;
+            height: 25px;
+            border-radius: 50% ;
+            background-color: #E7C598;
+            color: #BF0C21;
+            line-height:25px;
+            text-align: center;
+            position: fixed;
+            right: 30px;
+            bottom:15px;
+            a{
+                color: #BF0C21;
+            }
+        }
+    }
+}
